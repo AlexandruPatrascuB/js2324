@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let n = prompt("Numarul n", 7);
+      let min = 99999999;
+      let max = 0;
+      for (let i = 1; i <= n; i++) {
+        let numar = prompt("Introduceri numarul");
+        if (numar >= max) {
+          max = numar;
+        }
+        if (numar <= min) {
+          min = numar;
+        }
+      }
+      console.log("Minimul este " + min);
+      console.log("Maximul este " + max);
+    </script>
+  </body>
+</html>
